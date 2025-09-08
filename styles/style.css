@@ -417,6 +417,7 @@ footer::after {
   .header {
     padding: 10px 10px;
     margin-bottom: 50px;
+    height: 1024px;
   }
 
   .header__title {
