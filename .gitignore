@@ -1,0 +1,19 @@
+# Игнорировать ВСЕ файлы по умолчанию
+*
+
+# Сделать исключение для нужных файлов и папок проекта:
+!/.gitignore
+!/index.html
+!/README.md
+!/fonts/
+!/images/
+!/scripts/
+!/styles/
+!/.github/
+
+# Разрешить содержимое нужных папок:
+!fonts/*
+!images/*
+!scripts/*
+!styles/*
+!.github/*

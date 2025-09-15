@@ -1,0 +1,81 @@
+:root.theme-light {
+  --background-color: #fff1f7;
+  --background-image: url(../images/cover-image-light.png);
+  --accent-color: #ff8dcb;
+  --title-color: #ffc2e6;
+  --title-decor-color: #353430;
+  --text-color: #353430;
+  --button-color: #353430;
+  --button-hover: #353430;
+  --decor-color: #353430;
+  --link-shadow: #ff8dcb;
+}
+
+.theme-light .header__decorative-element {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: #fff1f7;
+    --background-image: url(../images/cover-image-light.png);
+    --accent-color: #ff8dcb;
+    --title-color: #ffc2e6;
+    --title-decor-color: #353430;
+    --text-color: #353430;
+    --button-color: #353430;
+    --button-hover: #353430;
+    --decor-color: #353430;
+    --link-shadow: #ff8dcb;
+  }
+
+  .header__decorative-element {
+    display: none;
+  }
+}
+
+.theme-light .header__title {
+  text-shadow: 4px 4px 0px var(--accent-color);
+}
+
+.theme-light .header__theme-menu-button_active {
+  outline: 1px solid var(--button-color);
+  border: 1px solid var(--button-color);
+  pointer-events: none;
+}
+
+.theme-light .decorated-zone::before,
+.theme-light .decorated-zone::after {
+  border-color: var(--decor-color);
+}
+
+.theme-light .title-decor,
+.theme-light .article__title,
+.theme-light .article__title--special,
+.theme-light .content-section__subtitle,
+.theme-light .gallery-section__title {
+  background-color: var(--accent-color);
+  color: var(--title-decor-color);
+}
+
+.theme-light .content-section__title,
+.theme-light .article__text {
+  color: var(--text-color);
+}
+
+.theme-light .article__link {
+  text-shadow: 2px 2px 0px var(--accent-color);
+}
+
+.theme-light .footer__title {
+  text-shadow: 4px 4px 0px var(--accent-color);
+}
+
+.theme-light .article__link:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.theme-light .article__link:focus {
+  outline: 1px solid var(--text-color);
+}
