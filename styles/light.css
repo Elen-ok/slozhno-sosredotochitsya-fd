@@ -19,7 +19,7 @@
   :root {
     --background-color: #fff1f7;
     --background-image: url(../images/cover-image-light.png);
-    --accent-color: #ff8dcb;
+    --accent-color: #ffc2e6;
     --title-color: #ffc2e6;
     --title-decor-color: #353430;
     --text-color: #353430;
@@ -39,7 +39,6 @@
 }
 
 .theme-light .header__theme-menu-button_active {
-  outline: 1px solid var(--button-color);
   border: 1px solid var(--button-color);
   pointer-events: none;
 }
