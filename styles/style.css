@@ -17,8 +17,8 @@
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  height: 100vh;
-  max-height: 668px;
+  min-height: 100vh;
+  min-height: 668px;
   align-items: center;
   margin-bottom: 30px;
 }
@@ -77,8 +77,9 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 0px;
+gap: 8px;
   list-style: none;
+  
 }
 
 .header__theme-menu-button {
@@ -89,13 +90,14 @@
   font-size: 18px;
   line-height: 18px;
   text-transform: lowercase;
-  padding: 10px 10px;
   cursor: pointer;
   transition: border-color 0.3s ease;
+padding: 5px 7px;
 }
 
 .header__theme-menu-button:hover {
   border-color: var(--button-hover);
+  opacity: 0.6;
 }
 
 .header__theme-menu-button:focus {
@@ -193,6 +195,7 @@
   font-weight: 700;
   line-height: 23.44px;
   font-family: var(--font-family, "IBM Plex mono", sans-serif);
+  color: #FF0070; 
 }
 
 .content-section__subtitle {
@@ -335,6 +338,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
 
 @media (min-width: 768px) {
@@ -345,7 +349,7 @@
 
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-left: -15px;
+    margin-left: -10px;
   }
 
   .decorated-zone::before {
@@ -359,11 +363,10 @@
   }
 
   .header__decorative-element {
-    margin-bottom: 10px;
+  margin-top: 10px;
     margin-right: 10px;
   }
   .header__theme-menu-list {
-    margin-top: 10px;
     margin-right: 10px;
   }
 
@@ -453,6 +456,9 @@
   .footer {
     min-height: 1024px;
   }
+  .footer__title{
+    margin-top: 10px;
+  }
 
   .footer::before {
     top: 30px;
@@ -480,8 +486,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    margin: 0;
+    gap: 17px;
+    margin-top: 7px;
     padding: 0;
     list-style: none;
   }
@@ -489,6 +495,7 @@
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     text-shadow: 4px 4px 0 var(--accent-color);
+    margin-left: -20px;
   }
 
   .title-decor {
@@ -496,7 +503,12 @@
     text-align: start;
     width: 100%;
     box-sizing: border-box;
-    max-height: 70px;
+    /* Убрано: max-height: 70px; */
+    padding: 0px;
+    
+    /* Добавьте вместо фиксированной высоты: */
+    min-height: auto; /* или не указывайте вовсе */
+    height: auto; /* автоматическая высота по содержимому */
     padding: 0px;
   }
 
@@ -519,9 +531,6 @@
     left: 10px;
   }
 
-  .header__decorative-element {
-    top: 10px;
-  }
 
   .content-section {
     display: grid;
