@@ -72,7 +72,8 @@
 
 .theme-light .article__link:hover {
   color: var(--text-color);
-  text-decoration: underline;
+  border-bottom: 1px solid var(--text-color);
+  text-decoration: none;
 }
 
 .theme-light .article__link:focus {
